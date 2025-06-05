@@ -13,7 +13,7 @@ const SearchBar: SearchbarComponent = ({ className }) => {
 		<Input
 			label={'Search Army Links'}
 			clearable
-			type={'search'}
+			type={'text'}
 			id={'army-link-search'}
 			autoComplete={'off'}
 			className={className}

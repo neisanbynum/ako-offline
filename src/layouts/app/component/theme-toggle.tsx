@@ -1,8 +1,8 @@
-import { Button } from "@/components/base/button"
-import { useTheme } from "@/utils/hooks/useTheme"
-import { titlecase } from "@/utils/parsers/strings"
-import { cn } from "@sglara/cn"
-import { Sun, Moon } from "lucide-react"
+import { Button } from '@/components/base/button'
+import { useTheme } from '@/utils/hooks/useTheme'
+import { titlecase } from '@/utils/parsers/strings'
+import { cn } from '@sglara/cn'
+import { Sun, Moon } from 'lucide-react'
 
 const ThemeToggle: React.FC = () => {
 	const { theme, toggleTheme } = useTheme('dark', 'ako-offline-theme')

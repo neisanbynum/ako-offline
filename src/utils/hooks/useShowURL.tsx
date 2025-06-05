@@ -24,7 +24,7 @@ type URLDisplayProperties = {
 }
 type URLDisplayComponent  = React.FC<URLDisplayProperties>
 const URLDisplay: URLDisplayComponent = ({ url }) => (
-	<div className="flex bg-slate-50 dark:bg-black p-2 fixed bottom-0 left-0 overflow-hidden">
+	<div className="flex bg-slate-50 dark:bg-black p-2 fixed bottom-0 left-0 z-50 overflow-hidden">
 		<span className="text-xs text-nowrap">{url}</span>
 	</div>
 )

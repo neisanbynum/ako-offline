@@ -25,12 +25,18 @@ const Input: InputComponent = ({
 
 	return (
 		<InputProvider id={id} value={value} onChange={onChange} error={error}>
-			<VStack className={cn('w-24 h-fit items-start gap-0.5', className)}>
+			<VStack.Fit className={cn('w-24 items-start gap-0.5', className)}>
 				<InputLabel showLabel={showLabel} label={label} className={classNames?.label} />
-				<InputEntry className={classNames?.input} label={label} placeholder={placeholder} clearable={clearable} {...rest} />
+				<InputEntry
+					{...rest}
+					className={classNames?.input}
+					label={label}
+					placeholder={placeholder}
+					clearable={clearable}
+				/>
 				<InputDescription className={classNames?.desc} desc={desc} />
 				<InputError className={classNames?.error} />
-			</VStack>
+			</VStack.Fit>
 		</InputProvider>
 	)
 }

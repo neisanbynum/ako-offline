@@ -1,5 +1,5 @@
-import type { ArmySiteDefinitions } from "@/utils/data/army-sites"
-import type { Thunk } from "@neisanworks/types-react"
+import type { ArmySiteDefinitions } from '@/utils/data/army-sites'
+import type { Thunk } from '@neisanworks/types-react'
 
 export type useHomeContextReturn = {
 	search: string
